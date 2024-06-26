@@ -27,6 +27,8 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
 cap = cv2.VideoCapture(0)
+cap.set(3,1920)
+cap.set(4,1080)
 with mp_hands.Hands(
     model_complexity=1,
     min_detection_confidence=0.7,
